@@ -1,0 +1,86 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.anna-container {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+  align-items: end;
+}
+
+.anna {
+  position: relative;
+  height: 70%;
+  aspect-ratio: 824/1000;
+  margin-bottom: 0;
+  margin-right: 10%;
+}
+
+.background {
+  z-index: 0;
+  margin-top: -50px;
+  position: absolute;
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: auto;
+  background-color: lightyellow;
+  margin-bottom: 15%;
+  margin-right: -5%;
+}
+.border {
+  border: 8px solid #000000;
+}
+.round {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+}
+
+/* Right triangle placed top right flush. */
+.tri-right.border.right-top:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -40px;
+  top: -8px;
+  bottom: auto;
+  border: 32px solid;
+  border-color: #000000 transparent transparent transparent;
+}
+.tri-right.right-top:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -20px;
+  top: 0px;
+  bottom: auto;
+  border: 20px solid;
+  border-color: lightyellow transparent transparent transparent;
+}
+
+.talktext {
+  padding: 1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+.talktext p {
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}

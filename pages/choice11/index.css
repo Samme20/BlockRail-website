@@ -1,0 +1,63 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+video {
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.playing {
+  display: none;
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  bottom: 10%;
+}
+
+.notPlaying {
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  bottom: 10%;
+}
+
+.option {
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  border-radius: 15px 50px 30px;
+  width: auto;
+  height: 100%;
+  text-align: center;
+  font-size: 2.5vh;
+  font-weight: bold;
+  margin: 5%;
+  text-decoration: none;
+}
+
+.option:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 0px 0px 12px black;
+}
+
+.option * {
+  margin: 50px;
+  color: black;
+}
