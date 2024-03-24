@@ -1,7 +1,8 @@
+"use client";
 import "./index.css";
 import { useState } from "react";
 import Link from "next/link";
-export default function choice1() {
+export default function Choice1() {
   const [playing, setPlaying] = useState(true);
   const changeMute = () => {
     setPlaying(false);
@@ -17,7 +18,7 @@ export default function choice1() {
           <p>Sure! Let me just take a quick piss on this little frog</p>
         </Link>
         <Link href="/" className="option">
-          <p>Nah, I don't feel like it</p>
+          <p>Nah, I don&apos;t feel like it</p>
         </Link>
       </div>
     </div>

@@ -1,7 +1,8 @@
+"use client";
 import "./index.css";
 import { useState } from "react";
 import Link from "next/link";
-export default function choice2() {
+export default function Choice2() {
   const [playing, setPlaying] = useState(true);
   const changeMute = () => {
     setPlaying(false);
@@ -14,7 +15,7 @@ export default function choice2() {
       </video>
       <div className={playing ? "playing" : "notPlaying"}>
         <Link href="/choice11" className="option">
-          <p>Okay let's go!</p>
+          <p>Okay let&apos;s go!</p>
         </Link>
       </div>
     </div>

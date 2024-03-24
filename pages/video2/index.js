@@ -1,7 +1,8 @@
+"use client";
 import "./index.css";
 import { useState } from "react";
 import Link from "next/link";
-export default function video2() {
+export default function Video2() {
   const [playing, setPlaying] = useState(true);
   const changeMute = () => {
     setPlaying(false);
